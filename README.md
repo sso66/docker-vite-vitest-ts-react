@@ -49,3 +49,5 @@ Main vite config file
 Main vitest setup file to extend jest
 
 - `vitest.setup.ts`
+
+## Docker Unleashed - Build, Ship and Run
