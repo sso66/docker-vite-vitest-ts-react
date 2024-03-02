@@ -21,7 +21,7 @@ Install dependencies:
 ```bash
 # FROM ./
 
-npm install;
+npm install
 ```
 
 Run tests:
@@ -29,7 +29,7 @@ Run tests:
 ```bash
 # FROM ./
 
-npm test;
+npm test
 ```
 
 ## Tests
