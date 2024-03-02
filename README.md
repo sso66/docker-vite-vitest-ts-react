@@ -10,8 +10,6 @@ This is a quick base code for setting up [Vitest](https://vitest.dev) tests for 
 
 This code is based on the article [Quick Vitest Setup With ViteJS, React, & TypeScript](https://codingwithmanny.medium.com/quick-vitest-setup-with-vitejs-react-typescript-bea9d3a01b07).
 
-![Quick Vitest Setup With ViteJS, React, & TypeScript](./README/article.png)
-
 ## Requirements
 
 - node `v18.18.2`
