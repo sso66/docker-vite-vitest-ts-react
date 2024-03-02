@@ -54,4 +54,8 @@ Main vitest setup file to extend jest
 
 - [Docker Hub](https://medium.com/platformer-blog/lets-publish-a-docker-image-to-docker-hub-using-a-github-action-f0b17e5cceb3)
 - [GitHub](https://betterstack.com/community/guides/scaling-nodejs/dockerize-nodejs/)
+  
 ## SDLC Cycle 
+- Kubernetes
+- NGINX
+- Helm
