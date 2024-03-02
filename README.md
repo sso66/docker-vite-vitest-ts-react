@@ -55,8 +55,21 @@ Main vitest setup file to extend jest
 - [Docker Hub: Publisher](https://medium.com/platformer-blog/lets-publish-a-docker-image-to-docker-hub-using-a-github-action-f0b17e5cceb3)
 - [GitHub: Subscriber](https://betterstack.com/community/guides/scaling-nodejs/dockerize-nodejs/)
 
-## Next Steps
+## Fixture:
 
+- [mrm](https://www.npmjs.com/package/mrm) - Command line tool to help you keep configuration (package.json, .gitignore, .eslintrc, etc.) of your open source projects in sync.
+
+## Next Steps - Code Review
+
+- Vite
+- React
+- Redux
+- Node
+- Express
+- Axios
+- Vitest
+- TypeScript
+- Docker
 - Kubernetes
 - NGINX
 - Helm

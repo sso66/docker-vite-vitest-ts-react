@@ -1,0 +1,26 @@
+.classroom {
+  /* layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  /* style */
+  background-color: snow;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.classroom > button {
+  /* layout */
+  height: 50px;
+  width: 150px;
+  /* style */
+  background-color: turquoise;
+  border: 1px solid teal;
+  border-radius: 3px;
+}
+
+li {
+  list-style-type: none;
+}
