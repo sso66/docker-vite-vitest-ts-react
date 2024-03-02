@@ -52,8 +52,8 @@ Main vitest setup file to extend jest
 
 ## Docker Unleashed - Build, Ship and Run
 
-- [Docker Hub](https://medium.com/platformer-blog/lets-publish-a-docker-image-to-docker-hub-using-a-github-action-f0b17e5cceb3)
-- [GitHub](https://betterstack.com/community/guides/scaling-nodejs/dockerize-nodejs/)
+- [Docker Hub Publisher](https://medium.com/platformer-blog/lets-publish-a-docker-image-to-docker-hub-using-a-github-action-f0b17e5cceb3)
+- [GitHub Subscriber](https://betterstack.com/community/guides/scaling-nodejs/dockerize-nodejs/)
   
 ## Next Steps
 - Kubernetes
