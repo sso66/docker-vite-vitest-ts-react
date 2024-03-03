@@ -11,4 +11,4 @@ COPY . .
 # Exposes the port to access the app from outside the container i.e. from the browser
 EXPOSE 5173
 # Execute npm run dev to start the server
-CMD npm run build
+CMD npm run dev
