@@ -1,3 +1,4 @@
+/* sample/watchlist.css */
 .WatchList {
   text-align: center;
   display: grid;
@@ -67,18 +68,18 @@ table td {
 }
 
 body {
-  background-image: url("image.png");
+  background-image: url('image.png');
   background-color: #0f0f0f;
   background-size: 1600px 800px;
 }
 
 .title {
-  font-family: "Zilla Slab", serif;
+  font-family: 'Zilla Slab', serif;
   font-size: 55px;
   color: white;
 }
 .tableDiv {
-  max-height: 150px;
+  max-height: 300px;
   overflow-y: scroll;
 }
 .rating {
@@ -87,4 +88,5 @@ body {
 
 .formDiv {
   margin: auto;
+  /* border: 1px solid tomato; */
 }

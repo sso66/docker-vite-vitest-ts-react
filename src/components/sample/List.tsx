@@ -1,20 +1,21 @@
-import { IAppState as IAppProps } from "./WatchList";
-import "./watchlist.css";
+// sample/List.tsx
+import { IAppState as IAppProps } from './WatchList'
+import './watchlist.css'
 
 const List = ({ form }: IAppProps) => {
   const mapList = (): JSX.Element[] => {
-    return form.map((i) => {
+    return form.map(i => {
       return (
         <tr>
           <td>{i.name}</td>
           <td>{i.rate}</td>
           <td>{i.review}</td>
         </tr>
-      );
-    });
-  };
+      )
+    })
+  }
   return (
-    <div className="tableDiv">
+    <div className='tableDiv'>
       <table>
         <tr>
           <th>Movie</th>
@@ -24,7 +25,7 @@ const List = ({ form }: IAppProps) => {
         {mapList()}
       </table>
     </div>
-  );
-};
+  )
+}
 
-export default List;
+export default List
