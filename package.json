@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "description": "The Roadmap: Dockerized Vite + Vitest TypeScript React Application",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
