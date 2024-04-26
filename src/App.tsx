@@ -11,6 +11,7 @@ import './App.css'
 // import WatchList from './components/sample/WatchList'
 import * as styles from './designs/VanillaExtract.css'
 import VanillaExtract from './designs/VanillaExtract'
+import TailwindCssBorderBox from './designs/TailwindCssBorderBox'
 
 function App () {
   // const [count, setCount] = useState(0)
@@ -61,6 +62,7 @@ function App () {
           <p>I'm styled using Vanilla Extract</p>
         </div>
         <VanillaExtract />
+        <TailwindCssBorderBox />
       </main>
     </div>
   )
