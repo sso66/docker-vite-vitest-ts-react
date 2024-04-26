@@ -4,11 +4,13 @@ import './App.css'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 
-import Blog from './Blog'
+// import Blog from './Blog'
 
 // import Classroom from "./components/school/Classroom";
 // import Home from "./components/bank/Home";
 // import WatchList from './components/sample/WatchList'
+import * as styles from './designs/VanillaExtract.css'
+import VanillaExtract from './designs/VanillaExtract'
 
 function App () {
   // const [count, setCount] = useState(0)
@@ -51,8 +53,14 @@ function App () {
           </ul>
         </div> */}
         {/* <Home /> */}
-        <Blog />
+        <h4>Vanilla Extract + Tailwind CSS FrameWork</h4>
+        {/* <Blog /> */}
         {/* <WatchList /> */}
+        <div className={styles.wrapper}>
+          <h1>Killerset</h1>
+          <p>I'm styled using Vanilla Extract</p>
+        </div>
+        <VanillaExtract />
       </main>
     </div>
   )

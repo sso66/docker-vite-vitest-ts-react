@@ -6,6 +6,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  border: 1px solid tomato;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -33,6 +34,14 @@ body {
 h1 {
   font-size: 2rem;
   line-height: 1.1;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  border: 1px solid snow;
+  font-size: small;
 }
 
 button {

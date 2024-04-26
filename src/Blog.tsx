@@ -24,7 +24,7 @@ export default function Blog () {
               style={{ background: 'black' }}
             />
             <div className='details'>
-              <h2>{blog.title}</h2>
+              <h3>{blog.title}</h3>
               <h4>{blog.author}</h4>
             </div>
           </div>
