@@ -10,8 +10,8 @@ import './App.css'
 // import Home from "./components/bank/Home";
 // import WatchList from './components/sample/WatchList'
 import * as styles from './designs/VanillaExtract.css'
-import VanillaExtract from './designs/VanillaExtract'
-import TailwindCssBorderBox from './designs/TailwindCssBorderBox'
+import VanillaExtract from './components/examples/VanillaExtract'
+import TailwindCSSBorderBox from './components/examples/TailwindCSSBorderBox'
 
 function App () {
   // const [count, setCount] = useState(0)
@@ -20,8 +20,8 @@ function App () {
     <div className='App'>
       <header>
         <h3 className='docker'>
-          Vite + React + Redux + Node+ Express + Axios + Vitest + TypeScript +
-          Docker
+          The Roadmap: Vite + React + Redux + Node+ Express + Axios + Vitest +
+          TypeScript + Docker
         </h3>
       </header>
       <main className='vitest'>
@@ -62,7 +62,7 @@ function App () {
           <p>I'm styled using Vanilla Extract</p>
         </div>
         <VanillaExtract />
-        <TailwindCssBorderBox />
+        <TailwindCSSBorderBox />
       </main>
     </div>
   )
