@@ -9,9 +9,11 @@ import './App.css'
 // import Classroom from "./components/school/Classroom";
 // import Home from "./components/bank/Home";
 // import WatchList from './components/sample/WatchList'
-import * as styles from './designs/VanillaExtract.css'
+
 import VanillaExtract from './components/examples/VanillaExtract'
-import TailwindCSSBorderBox from './components/examples/TailwindCSSBorderBox'
+// import TailwindCSSBorderBox from './components/examples/TailwindCSSBorderBox'
+
+import { Menu } from './components/examples/Menu'
 
 function App () {
   // const [count, setCount] = useState(0)
@@ -54,15 +56,13 @@ function App () {
           </ul>
         </div> */}
         {/* <Home /> */}
-        <h4>Vanilla Extract + Tailwind CSS FrameWork</h4>
+        <h4>Vanilla Extract CSS-in-JS + Tailwind CSS FrameWork</h4>
         {/* <Blog /> */}
         {/* <WatchList /> */}
-        <div className={styles.wrapper}>
-          <h1>Killerset</h1>
-          <p>I'm styled using Vanilla Extract</p>
-        </div>
         <VanillaExtract />
-        <TailwindCSSBorderBox />
+        <Menu />
+        <hr />
+        {/* <TailwindCSSBorderBox /> */}
       </main>
     </div>
   )

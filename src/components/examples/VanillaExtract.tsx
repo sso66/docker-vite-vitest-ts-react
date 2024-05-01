@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import * as styles from '../../designs/VanillaExtract.css'
 
 const VanillaExtract = () => {
   const [value, setValue] = useState<string>('')
@@ -31,7 +32,11 @@ const VanillaExtract = () => {
           </div>
         ))}
       </div>
-      <p>{value}</p>
+
+      <div className={styles.wrapper}>
+        <h1>Killerset</h1>
+        <p>I'm styled using Vanilla Extract</p>
+      </div>
     </div>
   )
 }

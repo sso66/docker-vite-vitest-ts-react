@@ -1,0 +1,21 @@
+.news {
+  background-color: lightgray;
+  border: solid thin white;
+  padding: 1em;
+}
+
+menu {
+  display: flex;
+  /* flex-flow: column; */
+  gap: 1em;
+  margin-bottom: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+a {
+  font-family: monospace;
+  font-size: x-large;
+  font-weight: bolder;
+}
