@@ -1,5 +1,5 @@
 # Create a node environment in the container
-FROM node
+FROM node:latest
 # Create a directory app an switch to that directory
 WORKDIR /app
 # Copies package.json file to app/ direactory
