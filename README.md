@@ -59,6 +59,8 @@ Main vitest setup file to extend jest
 
 - Vite
 - React
+- React-Markdown
+- Remark-GFM
 - Redux
 - Node
 - Express
