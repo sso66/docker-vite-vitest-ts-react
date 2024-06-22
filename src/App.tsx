@@ -22,8 +22,8 @@ function App () {
     <div className='App'>
       <header>
         <h3 className='docker'>
-          The Roadmap: Vite + React + Redux + Node+ Express + Axios + Vitest +
-          TypeScript + Docker
+          The Roadmap: Vite + React + Node + Fetch + Vitest + TypeScript +
+          Docker + Azure DevOps: GitHub
         </h3>
       </header>
       <main className='vitest'>
