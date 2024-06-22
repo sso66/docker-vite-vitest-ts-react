@@ -62,6 +62,9 @@ Main vitest setup file to extend jest
 - Redux
 - Node
 - Express
+- Fetch
+- Tanstack
+- Vanilla-Extract CSS-in-TS
 - Axios
 - Vitest
 - TypeScript
