@@ -1,4 +1,4 @@
-import './App.css'
+import "./App.css";
 // import { useState } from 'react'
 
 // import reactLogo from './assets/react.svg'
@@ -16,18 +16,18 @@ import './App.css'
 // import { Menu } from './components/examples/Menu'
 // import AxiosApi from './api/AxiosApi'
 
-function App () {
+function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div className='App'>
+    <div className="App">
       <header>
-        <h3 className='docker'>
+        <h3 className="docker">
           The Roadmap: Vite + React + Node + Fetch + Vitest + TypeScript +
           Docker Compose + Azure DevOps: GitHub
         </h3>
       </header>
-      <main className='vitest'>
+      <main className="vitest">
         {/* <div>
           <a href='https://vitejs.dev' target='_blank'>
             <img src={viteLogo} className='logo' alt='Vite logo' />
@@ -67,7 +67,7 @@ function App () {
         {/* <TailwindCSSBorderBox /> */}
       </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
