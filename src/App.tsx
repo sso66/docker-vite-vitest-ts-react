@@ -10,10 +10,11 @@ import './App.css'
 // import Home from "./components/bank/Home";
 // import WatchList from './components/sample/WatchList'
 
-import VanillaExtract from './components/examples/VanillaExtract'
+// import VanillaExtract from './components/examples/VanillaExtract'
 // import TailwindCSSBorderBox from './components/examples/TailwindCSSBorderBox'
 
-import { Menu } from './components/examples/Menu'
+// import { Menu } from './components/examples/Menu'
+// import AxiosApi from './api/AxiosApi'
 
 function App () {
   // const [count, setCount] = useState(0)
@@ -23,7 +24,7 @@ function App () {
       <header>
         <h3 className='docker'>
           The Roadmap: Vite + React + Node + Fetch + Vitest + TypeScript +
-          Docker + Azure DevOps: GitHub
+          Docker Compose + Azure DevOps: GitHub
         </h3>
       </header>
       <main className='vitest'>
@@ -56,12 +57,13 @@ function App () {
           </ul>
         </div> */}
         {/* <Home /> */}
-        <h4>Vanilla Extract CSS-in-JS + Tailwind CSS FrameWork</h4>
+        <h4>Vanilla Extract CSS-in-JS + Tailwind CSS Framework</h4>
         {/* <Blog /> */}
         {/* <WatchList /> */}
-        <VanillaExtract />
-        <Menu />
+        {/* <VanillaExtract /> */}
+        {/* <Menu /> */}
         <hr />
+        {/* <AxiosApi /> */}
         {/* <TailwindCSSBorderBox /> */}
       </main>
     </div>

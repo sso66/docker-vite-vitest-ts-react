@@ -17,9 +17,11 @@ async function fetchUsers (): Promise<UserProps[]> {
 
 function UserList () {
   const [users, setUsers] = useState<UserProps[]>([])
+
   useEffect(() => {
     fetchUsers().then(data => setUsers(data))
   })
+
   return (
     <div className=''>
       {users.map(user => (

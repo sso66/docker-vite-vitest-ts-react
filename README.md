@@ -1,4 +1,4 @@
-# docker-vite-vitest-ts-app
+# docker-vite-vitest-ts-react
 
 Step By Step Guide to Dockerize React App Created Using Vite + Vitest
 

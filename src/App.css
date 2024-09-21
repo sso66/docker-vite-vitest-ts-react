@@ -46,7 +46,7 @@
   background-color: black;
   border-radius: 2px;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   color: snow;
 }
 
@@ -73,7 +73,7 @@
 }
 
 .App {
-  background: snow;
+  background: none;
   /* height: 100vh; */
 }
 
