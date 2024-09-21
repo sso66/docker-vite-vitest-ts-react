@@ -1,7 +1,7 @@
 {
   "name": "docker-vite-vitest-ts-app",
   "private": true,
-  "version": "1.0.2",
+  "version": "1.0.0",
   "type": "module",
   "description": "The Roadmap: Dockerized Vite + Vitest TypeScript React Application",
   "scripts": {
@@ -21,6 +21,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-markdown": "^9.0.1",
+    "react-router-dom": "^6.26.2",
     "remark-gfm": "^4.0.0"
   },
   "devDependencies": {
