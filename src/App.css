@@ -42,21 +42,22 @@
   color: #888;
 }
 
-.vitest {
+/* custom styling */
+/* .vitest {
   background-color: black;
   border-radius: 2px;
   font-family: 'Courier New', Courier, monospace;
-  /* font-size: 1.5rem; */
+  font-size: 1.5rem;
   color: snow;
-}
+} */
 
-* {
+/* * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-}
+} */
 
-.navbar {
+/* .navbar {
   background-color: rgb(50, 47, 47);
   color: white;
   padding: 10px;
@@ -70,14 +71,14 @@
 }
 .navbar ul li {
   margin: 10px;
-}
+} */
 
-.App {
+/* .App {
   background: none;
-  /* height: 100vh; */
-}
+  height: 100vh;
+} */
 
-.container {
+/* .container {
   width: 600px;
   margin: 0px auto;
 }
@@ -96,11 +97,11 @@
 }
 .container .card img {
   width: 100%;
-}
+} */
 
-.docker {
+/* .docker {
   background: darkblue;
   font-family: monospace;
   font-size: 1rem;
   color: gold;
-}
+} */
