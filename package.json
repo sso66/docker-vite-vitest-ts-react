@@ -1,5 +1,5 @@
 {
-  "name": "docker-vite-vitest-ts-app",
+  "name": "docker-vite-vitest-ts-react",
   "private": true,
   "version": "1.0.0",
   "type": "module",
