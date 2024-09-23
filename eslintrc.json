@@ -1,0 +1,28 @@
+{
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended"
+    ],
+    "plugins": [
+        "react",
+        "react-hooks"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "2020",
+        "sourctType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "env": {
+            "browser": true,
+            "es2020": true
+        },
+        "rules": {}
+    }
+}

@@ -35,7 +35,7 @@ const VanillaExtract = () => {
 
       <div className={styles.wrapper}>
         <h1>Killerset</h1>
-        <p>I'm styled using Vanilla Extract</p>
+        <p>I&apos;m styled using Vanilla Extract</p>
       </div>
     </div>
   )

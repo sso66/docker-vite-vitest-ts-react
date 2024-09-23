@@ -152,19 +152,19 @@ const CustomerQuoteFetchData = () => {
           <p>
             Lannister Electric will perform your EV charging installation!
             Consistent with Terms of Use of our software platform, which can be
-            foud at Qmerit's Terms of Use, which you agree and abide by whenever
-            using our service, you are contracting directly with Lannister
-            Electric to perform your EV chagring installation. We encourage you
-            to make sure you have a written agreement with your certified
-            installer that specifies their license number, warranty, insurance
-            coverage and other important aspects of the services to be provided
-            by Lannister Electric. The scope of work being provided here is
-            intended only t specify the parameters of the tiered price which you
-            will pay to Qmerit based on the criteria you have inout into your
-            platform. Qmerit will not be performing the services and will only
-            be processing the payment and responsible to pay the certified
-            installer you have selected on your behalf once the work is
-            completed.
+            foud at Qmerit&apos;s Terms of Use, which you agree and abide by
+            whenever using our service, you are contracting directly with
+            Lannister Electric to perform your EV chagring installation. We
+            encourage you to make sure you have a written agreement with your
+            certified installer that specifies their license number, warranty,
+            insurance coverage and other important aspects of the services to be
+            provided by Lannister Electric. The scope of work being provided
+            here is intended only t specify the parameters of the tiered price
+            which you will pay to Qmerit based on the criteria you have inout
+            into your platform. Qmerit will not be performing the services and
+            will only be processing the payment and responsible to pay the
+            certified installer you have selected on your behalf once the work
+            is completed.
           </p>
 
           <footer className="help">

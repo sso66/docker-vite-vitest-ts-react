@@ -21,6 +21,8 @@ const App = () => {
     React.useState('')
 
   const cancelToken = axios.CancelToken //create cancel token
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [cancelTokenSource, setCancelTokenSource]: [
     CancelTokenSource,
     (cancelTokenSource: CancelTokenSource) => void,
@@ -55,7 +57,7 @@ const App = () => {
               : 'An unexpected error has occurred'
         setError(error)
         setLoading(false)
-        setCancelTokenSource
+        // setCancelTokenSource
       })
   }, [cancelTokenSource])
 

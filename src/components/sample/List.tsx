@@ -4,9 +4,9 @@ import './watchlist.css'
 
 const List = ({ form }: IAppProps) => {
   const mapList = (): JSX.Element[] => {
-    return form.map((i) => {
+    return form.map((i, j) => {
       return (
-        <tr>
+        <tr key={j}>
           <td>{i.name}</td>
           <td>{i.rate}</td>
           <td>{i.review}</td>

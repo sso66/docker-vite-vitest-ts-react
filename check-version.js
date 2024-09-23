@@ -14,7 +14,7 @@ patch = parseInt(patch)
 let newVersion = ''
 
 if (patch === 9) {
-  let newPatch = 0
+  const newPatch = 0
   let newMinor = minor + 1
   let newMajor = major
 
@@ -25,9 +25,9 @@ if (patch === 9) {
 
   newVersion = `${newMajor}.${newMinor}.${newPatch}`
 } else {
-  let newPatch = patch + 1
-  let newMinor = minor
-  let newMajor = major
+  const newPatch = patch + 1
+  const newMinor = minor
+  const newMajor = major
 
   newVersion = `${newMajor}.${newMinor}.${newPatch}`
 }
