@@ -1,7 +1,7 @@
-import { useState } from "react";
-import "./App.css";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useState } from 'react'
+import './App.css'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 
 // import Blog from './Blog'
 
@@ -16,7 +16,7 @@ import viteLogo from "/vite.svg";
 // import AxiosApi from './api/AxiosApi'
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
@@ -49,7 +49,7 @@ function App() {
         </p>
         {/* <Classroom name="Saint Paul High School" /> */}
 
-        {/* <div className="navbar">
+        {/* <div className='navbar'>
           <ul>
             <li>Home</li>
             <li>Blog</li>
@@ -66,7 +66,7 @@ function App() {
         {/* <TailwindCSSBorderBox /> */}
       </main>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

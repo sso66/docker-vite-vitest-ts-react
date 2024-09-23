@@ -1,8 +1,8 @@
 interface Item {
-  id: number;
+  id: number
 }
 interface DisplayDataItem<T> {
-  items: Array<T>;
+  items: Array<T>
 }
 export const DisplayData = <T extends Item>({ items }: DisplayDataItem<T>) => {
   return (
@@ -13,5 +13,5 @@ export const DisplayData = <T extends Item>({ items }: DisplayDataItem<T>) => {
         ))}
       </ul>
     </>
-  );
-};
+  )
+}

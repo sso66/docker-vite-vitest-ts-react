@@ -1,13 +1,13 @@
-import blogData from "../blob.json";
-import React from "./assets/react.svg";
-import WatchList from "./assets/image.png";
+import blogData from '../blob.json'
+import React from './assets/react.svg'
+import WatchList from './assets/image.png'
 
 type Blog = {
-  id: number;
-  title: string;
-  cover: string;
-  author: string;
-};
+  id: number
+  title: string
+  cover: string
+  author: string
+}
 
 export default function Blog() {
   return (
@@ -21,7 +21,7 @@ export default function Blog() {
               alt=""
               width={480}
               height={240}
-              style={{ background: "black" }}
+              style={{ background: '#f6f7f8' }}
             />
             <div className="details">
               <h3>{blog.title}</h3>
@@ -31,5 +31,5 @@ export default function Blog() {
         ))}
       </div>
     </div>
-  );
+  )
 }

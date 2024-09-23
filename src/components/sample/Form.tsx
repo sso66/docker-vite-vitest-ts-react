@@ -1,32 +1,32 @@
 // sample/Form.tsx
-import React, { useState } from "react";
-import { IAppState as IAppProps } from "./WatchList";
+import React, { useState } from 'react'
+import { IAppState as IAppProps } from './WatchList'
 
 interface ICompProps {
-  form: IAppProps["form"];
-  setForm: React.Dispatch<React.SetStateAction<IAppProps["form"]>>;
+  form: IAppProps['form']
+  setForm: React.Dispatch<React.SetStateAction<IAppProps['form']>>
 }
 
 const Form = ({ form, setForm }: ICompProps) => {
   const [input, setInput] = useState({
-    name: "",
-    rate: "",
-    review: "",
-  });
+    name: '',
+    rate: '',
+    review: '',
+  })
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ): void => {
     setInput({
       ...input,
       [e.target.name]: e.target.value,
-    });
-  };
+    })
+  }
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>): void => {
-    e.preventDefault();
+    e.preventDefault()
     if (!input.name || !input.rate) {
-      return;
+      return
     }
     setForm([
       ...form,
@@ -35,13 +35,13 @@ const Form = ({ form, setForm }: ICompProps) => {
         rate: parseInt(input.rate),
         review: input.review,
       },
-    ]);
+    ])
     setInput({
-      name: "",
-      rate: "",
-      review: "",
-    });
-  };
+      name: '',
+      rate: '',
+      review: '',
+    })
+  }
 
   return (
     <form className="">
@@ -81,7 +81,7 @@ const Form = ({ form, setForm }: ICompProps) => {
         Submit
       </button>
     </form>
-  );
-};
+  )
+}
 
-export default Form;
+export default Form

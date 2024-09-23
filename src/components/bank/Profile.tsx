@@ -3,13 +3,13 @@
 
 type ProfilePropsType = {
   profile: {
-    firstName: string;
-    middleName?: string;
-    lastName: string;
-    password: number | string;
-    role?: string;
-  };
-};
+    firstName: string
+    middleName?: string
+    lastName: string
+    password: number | string
+    role?: string
+  }
+}
 
 // interface ProfilePropsType {
 //   profile: {
@@ -28,7 +28,7 @@ const Profile = ({ profile }: ProfilePropsType): JSX.Element => {
   return (
     <>
       <h3>My Profile CSS Grid Layout</h3>
-      <div style={{ background: "snow", padding: "10px" }}>
+      <div style={{ background: 'snow', padding: '10px' }}>
         <p>Common Transactions Teller Platform</p>
         <span>First Name: {profile.firstName}</span>
         <br />
@@ -43,7 +43,7 @@ const Profile = ({ profile }: ProfilePropsType): JSX.Element => {
         </span>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Profile;
+export default Profile

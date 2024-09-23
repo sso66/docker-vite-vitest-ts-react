@@ -1,29 +1,29 @@
-import { useEffect, useState } from "react";
-import Data from "../types/CustomerQuoteType";
-import ReactMarkdown from "react-markdown";
-import serviceProvider from "../assets/vite.svg";
+import { useEffect, useState } from 'react'
+import Data from '../types/CustomerQuoteType'
+import ReactMarkdown from 'react-markdown'
+import serviceProvider from '../assets/vite.svg'
 
 const CustomerQuoteFetchData = () => {
-  const [data, setData] = useState<Data>();
-  const baseUrl = "./customer-quote.json";
+  const [data, setData] = useState<Data>()
+  const baseUrl = './customer-quote.json'
 
   const fetchData = () => {
     fetch(baseUrl)
       .then((response) => {
-        return response.json();
+        return response.json()
       })
       .then((data) => {
-        setData(data);
-        return data;
+        setData(data)
+        return data
       })
       .catch((e: Error) => {
-        console.log(e.message);
-      });
-  };
+        console.log(e.message)
+      })
+  }
 
   useEffect(() => {
-    fetchData();
-  }, []);
+    fetchData()
+  }, [])
 
   return (
     <>
@@ -96,14 +96,14 @@ const CustomerQuoteFetchData = () => {
                         <b>{catalogItems.name.en}</b>
                       </p>
                       <ReactMarkdown>
-                        {catalogItems.description?.["en-us"]}
+                        {catalogItems.description?.['en-us']}
                       </ReactMarkdown>
                       <form className="credits">
                         {catalogItems.quantity} x {catalogItems.retailPrice}
                         &nbsp;&nbsp;<b>${catalogItems.retailPrice}</b>
                       </form>
                     </li>
-                  );
+                  )
                 })}
                 <br />
                 <form className="credits">
@@ -183,7 +183,7 @@ const CustomerQuoteFetchData = () => {
       </div>
       <hr />
     </>
-  );
-};
+  )
+}
 
-export default CustomerQuoteFetchData;
+export default CustomerQuoteFetchData

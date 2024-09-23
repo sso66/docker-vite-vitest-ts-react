@@ -1,4 +1,4 @@
-import "./menu.css";
+import './menu.css'
 
 export const Menu = () => (
   <>
@@ -16,4 +16,4 @@ export const Menu = () => (
       </menu>
     </div>
   </>
-);
+)

@@ -1,27 +1,27 @@
-import { useState } from "react";
-import "./classroom.css";
+import { useState } from 'react'
+import './classroom.css'
 
-import { ISchoolame, IStudent, Level } from "./interfaces";
-import { studentList, courseList } from "./data";
-import { DisplayData } from "./DisplayData";
-import { GenericSort } from "./GenericSort";
+import { ISchoolame, IStudent, Level } from './interfaces'
+import { studentList, courseList } from './data'
+import { DisplayData } from './DisplayData'
+import { GenericSort } from './GenericSort'
 
 function Classroom({ name }: ISchoolame) {
-  const [student, setStudent] = useState<IStudent | null>(null);
-  const [courses, setCourses] = useState(studentList);
+  const [student, setStudent] = useState<IStudent | null>(null)
+  const [courses, setCourses] = useState(studentList)
 
   const addStudent = () => {
     setStudent({
-      name: "Sun Stephen",
-      surname: "Oo",
+      name: 'Sun Stephen',
+      surname: 'Oo',
       age: 20,
-      level: "Undergraduate",
-    });
-  };
+      level: 'Undergraduate',
+    })
+  }
   const sortData = () => {
-    GenericSort(studentList, "age");
-    setCourses([...studentList]);
-  };
+    GenericSort(studentList, 'age')
+    setCourses([...studentList])
+  }
 
   return (
     <div className="classroom">
@@ -53,7 +53,7 @@ function Classroom({ name }: ISchoolame) {
         <DisplayData items={courseList} />
       </div>
     </div>
-  );
+  )
 }
 
-export default Classroom;
+export default Classroom

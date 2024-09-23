@@ -5,7 +5,7 @@ const TailwindCSSBorderBox = ({ borderColor }: any) => {
     <div className={`border border-solid border-[${borderColor}]`}>
       Tailwind CSS Border Box
     </div>
-  );
-};
+  )
+}
 
-export default TailwindCSSBorderBox;
+export default TailwindCSSBorderBox
