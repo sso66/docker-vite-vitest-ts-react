@@ -1,5 +1,6 @@
+// src/api/UserList.tsx
 import { useEffect, useState } from 'react'
-import './quote-form.css'
+// import './quote-form.css'
 
 interface UserProps {
   id: number
@@ -9,24 +10,24 @@ interface UserProps {
 
 const baseUrl = 'https:/jsonplaceholder.typicode.com/users'
 
-async function fetchUsers(): Promise<UserProps[]> {
+async function fetchUsers (): Promise<UserProps[]> {
   const response = await fetch(baseUrl)
   const data = await response.json()
   return data
 }
 
-function UserList() {
+function UserList () {
   const [users, setUsers] = useState<UserProps[]>([])
 
   useEffect(() => {
-    fetchUsers().then((data) => setUsers(data))
+    fetchUsers().then(data => setUsers(data))
   })
 
   return (
-    <div className="">
-      {users.map((user) => (
+    <div className=''>
+      {users.map(user => (
         <div key={user.id}>
-          <p className="quote">{user.name}</p>
+          <p className='quote'>{user.name}</p>
         </div>
       ))}
     </div>

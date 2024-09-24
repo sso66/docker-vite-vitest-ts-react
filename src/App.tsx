@@ -14,6 +14,7 @@ import viteLogo from '/vite.svg'
 
 // import { Menu } from './components/examples/Menu'
 // import AxiosApi from './api/AxiosApi'
+import UserList from './api/UserList'
 
 function App () {
   const [count, setCount] = useState(0)
@@ -25,7 +26,6 @@ function App () {
           The Roadmap: TypeScript +Vite + React + Node + Fetch + Vitest + Docker
           Compose + + GitHub + Azure DevOps
         </h3>
-        <h4>+ Vanilla Extract CSS-in-JS + Tailwind CSS Framework</h4>
       </header>
       <main className='vitest'>
         <div>
@@ -66,6 +66,9 @@ function App () {
         <hr />
         {/* <AxiosApi /> */}
         {/* <TailwindCSSBorderBox /> */}
+        <UserList />
+        <hr />
+        <h4>+ Vanilla Extract CSS-in-JS + Tailwind CSS Framework</h4>
       </main>
     </div>
   )
