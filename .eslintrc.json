@@ -13,5 +13,10 @@
     "ecmaVersion": "latest"
   },
   "plugins": ["@typescript-eslint", "react"],
-  "rules": {"react/react-in-jsx-scope": "off"}
+  "rules": { "react/react-in-jsx-scope": "off" },
+  "settings": {
+    "react": {
+      "version": "detect" // Automatically detects the React version
+    }
+  }
 }

@@ -9,21 +9,21 @@ type Blog = {
   author: string
 }
 
-export default function Blog() {
+export default function Blog () {
   return (
-    <div className="container">
-      <div className="blog">
+    <div className='container'>
+      <div className='blog'>
         {blogData.map((blog: Blog) => (
-          <div className="card" key={blog.id}>
-            <img src={React} alt="" width={48} height={48} />
+          <div className='card' key={blog.id}>
+            <img src={React} alt='' width={48} height={48} />
             <img
               src={WatchList}
-              alt=""
+              alt=''
               width={480}
               height={240}
               style={{ background: '#f6f7f8' }}
             />
-            <div className="details">
+            <div className='details'>
               <h3>{blog.title}</h3>
               <h4>{blog.author}</h4>
             </div>

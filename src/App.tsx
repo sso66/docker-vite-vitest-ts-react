@@ -15,36 +15,37 @@ import viteLogo from '/vite.svg'
 // import { Menu } from './components/examples/Menu'
 // import AxiosApi from './api/AxiosApi'
 
-function App() {
+function App () {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
+    <div className='App'>
       <header>
-        <h3 className="docker">
-          The Roadmap: Vite + React + Node + Fetch + Vitest + TypeScript +
-          Docker Compose + Azure DevOps: GitHub
+        <h3 className='docker'>
+          The Roadmap: TypeScript +Vite + React + Node + Fetch + Vitest + Docker
+          Compose + + GitHub + Azure DevOps
         </h3>
+        <h4>+ Vanilla Extract CSS-in-JS + Tailwind CSS Framework</h4>
       </header>
-      <main className="vitest">
+      <main className='vitest'>
         <div>
-          <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-            <img src={viteLogo} className="logo" alt="Vite logo" />
+          <a href='https://vitejs.dev' target='_blank' rel='noreferrer'>
+            <img src={viteLogo} className='logo' alt='Vite logo' />
           </a>
-          <a href="https://react.dev" target="_blank" rel="noreferrer">
-            <img src={reactLogo} className="logo react" alt="React logo" />
+          <a href='https://react.dev' target='_blank' rel='noreferrer'>
+            <img src={reactLogo} className='logo react' alt='React logo' />
           </a>
         </div>
 
-        <div className="">
-          <button onClick={() => setCount((count) => count + 1)}>
+        <div className=''>
+          <button onClick={() => setCount(count => count + 1)}>
             count is {count}
           </button>
           <p>
             Edit <code>src/App.tsx</code> and save to test HMR
           </p>
         </div>
-        <p className="read-the-docs">
+        <p className='read-the-docs'>
           Click on the Vite and React logos to learn more
         </p>
         {/* <Classroom name="Saint Paul High School" /> */}
@@ -56,9 +57,10 @@ function App() {
           </ul>
         </div> */}
         {/* <Home /> */}
-        <h4>Vanilla Extract CSS-in-JS + Tailwind CSS Framework</h4>
+
         {/* <Blog /> */}
         {/* <WatchList /> */}
+
         {/* <VanillaExtract /> */}
         {/* <Menu /> */}
         <hr />
