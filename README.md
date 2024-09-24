@@ -59,6 +59,7 @@ Main vitest setup file to extend jest
 
 - Vite
 - React
+- ESL & Prettier
 - React-Router-DOM
 - React-Markdown
 - Remark-GFM
