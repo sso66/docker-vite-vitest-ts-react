@@ -81,6 +81,7 @@
 .container {
   width: 600px;
   margin: 0px auto;
+  color: gold;
 }
 .container .blog {
   display: flex;
@@ -99,9 +100,9 @@
   width: 100%;
 }
 
-/* .docker {
-  background: darkblue;
+.docker {
+  background: gold;
   font-family: monospace;
   font-size: 1rem;
-  color: gold;
-} */
+  color: darkblue;
+}

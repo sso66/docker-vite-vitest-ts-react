@@ -13,8 +13,11 @@ import viteLogo from '/vite.svg'
 // import TailwindCSSBorderBox from './components/examples/TailwindCSSBorderBox'
 
 // import { Menu } from './components/examples/Menu'
-// import AxiosApi from './api/AxiosApi'
-import UserList from './api/UserList'
+import AxiosApi from './api/AxiosApi'
+// import UserList from './api/UserList'
+// import MyList from './copilot/MyList'
+
+import TodoApp from './components/TodoApp'
 
 function App () {
   const [count, setCount] = useState(0)
@@ -60,13 +63,15 @@ function App () {
 
         {/* <Blog /> */}
         {/* <WatchList /> */}
+        <TodoApp />
 
         {/* <VanillaExtract /> */}
         {/* <Menu /> */}
         <hr />
-        {/* <AxiosApi /> */}
+        <AxiosApi />
         {/* <TailwindCSSBorderBox /> */}
-        <UserList />
+        {/* <UserList /> */}
+        {/* <MyList /> */}
         <hr />
         <h4>+ Vanilla Extract CSS-in-JS + Tailwind CSS Framework</h4>
       </main>

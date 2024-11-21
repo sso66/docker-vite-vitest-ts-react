@@ -1,14 +1,20 @@
-# Create a node environment in the container
-FROM node:latest
-# Create a directory app an switch to that directory
+# Use an official Node runtime as a parent image
+FROM node:alpine
+
+# Set the working directory in the container
 WORKDIR /app
-# Copies package.json file to app/ direactory
-COPY package.json .
-# Run npm install to create node_modules for your app
+
+# Copy package.json and package-lock.json
+COPY package*.json ./
+
+# Install dependencies
 RUN npm install
-# Copies the source to destination /app directory
+
+# Copy the rest of the application code
 COPY . .
-# Exposes the port to access the app from outside the container i.e. from the browser
+
+# Expose the port the app runs on
 EXPOSE 5173
-# Execute npm run dev to start the server
-CMD npm run dev
+
+# Command to run the app
+CMD ["npm", "run", "dev"]

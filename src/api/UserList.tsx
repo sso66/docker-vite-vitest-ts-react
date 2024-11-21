@@ -1,12 +1,16 @@
 // src/api/UserList.tsx
 import { useEffect, useState } from 'react'
-// import './quote-form.css'
+import { UserProps } from '../types/user'
+import './quote-form.css'
 
-interface UserProps {
-  id: number
-  name: string
-  email: string
-}
+// interface UserProps {
+//   id: number
+//   name: string
+//   email: string
+//   company: {
+//     name: string
+//   }
+// }
 
 const baseUrl = 'https:/jsonplaceholder.typicode.com/users'
 
@@ -24,10 +28,10 @@ function UserList () {
   })
 
   return (
-    <div className=''>
+    <div className='container'>
       {users.map(user => (
         <div key={user.id}>
-          <p className='quote'>{user.name}</p>
+          <p className=''>{user.name + ' works for ' + user.company.name}</p>
         </div>
       ))}
     </div>
