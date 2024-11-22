@@ -1,19 +1,13 @@
-// src/api/AxiosApi.tsx
+// src/api/PostList.tsx
 
 import React from 'react'
 import axios, { CancelTokenSource } from 'axios'
+import Post from '../types/post'
 
-interface IPost {
-  id: number
-  userId?: number
-  title: string
-  body: string
-}
+const defaultPosts: Post[] = []
 
-const defaultPosts: IPost[] = []
-
-const App = () => {
-  const [posts, setPosts]: [IPost[], (posts: IPost[]) => void] =
+const PostList = () => {
+  const [posts, setPosts]: [Post[], (posts: Post[]) => void] =
     React.useState(defaultPosts)
 
   const [loading, setLoading]: [boolean, (loading: boolean) => void] =
@@ -38,7 +32,7 @@ const App = () => {
 
   React.useEffect(() => {
     axios
-      .get<IPost[]>('https://jsonplaceholder.typicode.com/posts', {
+      .get<Post[]>('https://jsonplaceholder.typicode.com/posts', {
         cancelToken: cancelTokenSource.token,
         headers: {
           'Content-Type': 'application/json',
@@ -81,4 +75,4 @@ const App = () => {
   )
 }
 
-export default App
+export default PostList

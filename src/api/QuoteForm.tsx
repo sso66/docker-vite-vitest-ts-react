@@ -5,7 +5,7 @@ type QuoteFormProps = {
 }
 
 const Quote = ({ name }: QuoteFormProps) => (
-  <div className="quote">
+  <div className='user'>
     <h1>{name}</h1>
   </div>
 )
