@@ -1,19 +1,18 @@
-import './App.css'
-import { UserPage } from './pages/UserPage'
-import { PostPage } from './pages/PostPage'
-// import Blog from './Blog'
+// src/App.tsx
 
+import './App.css'
+import WatchList from './components/watchlist/WatchContainer.tsx'
+
+// import { UserPage } from './pages/UserPage'
+// import { PostPage } from './pages/PostPage'
+// import Blog from './Blog'
 // import Classroom from './components/school/Classroom'
 // import Home from "./components/bank/Home";
-// import WatchList from './components/sample/WatchList'
 
 // import VanillaExtract from './components/examples/VanillaExtract'
 // import TailwindCSSBorderBox from './components/examples/TailwindCSSBorderBox'
-
 // import { Menu } from './components/examples/Menu'
-
 // import MyList from './copilot/MyList'
-
 // import TodoApp from './components/TodoApp'
 // import UserComponent from './components/example/UserComponent'
 
@@ -21,14 +20,17 @@ function App () {
   return (
     <div className='App'>
       <header>
-        <h2>Vite React TypeScript</h2>
+        <h1>Vite React TypeScript Migration</h1>
         <h3 className='docker'>
-          The Roadmap: TypeScript +Vite + React + Node + Fetch + Vitest + Docker
-          Compose + + GitHub + Azure DevOps
+          The Roadmap: TypeScript +Vite + React + Node + Vitest + Docker Compose
+          + + GitHub + Azure DevOps
         </h3>
       </header>
-      <UserPage />
-      <PostPage />
+      <main>
+        <WatchList />
+      </main>
+      {/* <UserPage /> */}
+      {/* <PostPage /> */}
       {/* <Classroom name='Saint Paul High School' /> */}
 
       {/* <div className='navbar'>
@@ -40,18 +42,17 @@ function App () {
       {/* <Home /> */}
 
       {/* <Blog /> */}
-      {/* <WatchList /> */}
+
       {/* <TodoApp /> */}
 
       {/* <VanillaExtract /> */}
       {/* <Menu /> */}
-      <hr />
 
       {/* <AxiosApi /> */}
       {/* <TailwindCSSBorderBox /> */}
 
       {/* <MyList /> */}
-      <hr />
+
       {/* <UserComponent
           name='Stephen'
           address='152 Eagleton Ct, Palm Beach Gardens, FL 33418'

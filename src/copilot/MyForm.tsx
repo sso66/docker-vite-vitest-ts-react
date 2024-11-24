@@ -22,12 +22,12 @@ const MyForm: React.FC<MyFormProps> = ({ item, onInputChange, onSubmit }) => {
   }
 
   return (
-    <form onSubmit={e => onSubmit(item.id, e)}>
+    <form onSubmit={(e) => onSubmit(item.id, e)}>
       <div>
         <label>Name:</label>
         <input
-          type='text'
-          name='name'
+          type="text"
+          name="name"
           value={item.name}
           onChange={handleChange}
         />
@@ -35,8 +35,8 @@ const MyForm: React.FC<MyFormProps> = ({ item, onInputChange, onSubmit }) => {
       <div>
         <label>Email:</label>
         <input
-          type='email'
-          name='email'
+          type="email"
+          name="email"
           value={item.email}
           onChange={handleChange}
         />
@@ -44,12 +44,12 @@ const MyForm: React.FC<MyFormProps> = ({ item, onInputChange, onSubmit }) => {
       <div>
         <label>Message:</label>
         <textarea
-          name='message'
+          name="message"
           value={item.message}
           onChange={handleChange}
         ></textarea>
       </div>
-      <button type='submit'>Submit</button>
+      <button type="submit">Submit</button>
     </form>
   )
 }

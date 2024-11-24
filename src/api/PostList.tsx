@@ -21,7 +21,7 @@ const PostList = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [cancelTokenSource]: [
     CancelTokenSource,
-    (cancelTokenSource: CancelTokenSource) => void
+    (cancelTokenSource: CancelTokenSource) => void,
   ] = React.useState(cancelToken.source())
 
   const handleCancelClick = () => {
@@ -39,18 +39,18 @@ const PostList = () => {
         },
         timeout: 10000,
       })
-      .then(response => {
+      .then((response) => {
         setPosts(response.data)
         setLoading(false)
       })
-      .catch(ex => {
+      .catch((ex) => {
         const error = axios.isCancel(ex)
           ? 'Request Cancelled'
           : ex.code === 'ECONNABORTED'
-          ? 'A timeout has occurred'
-          : ex.response.status === 404
-          ? 'Resource Not Found'
-          : 'An unexpected error has occurred'
+            ? 'A timeout has occurred'
+            : ex.response.status === 404
+              ? 'Resource Not Found'
+              : 'An unexpected error has occurred'
         setError(error)
         setLoading(false)
         // setCancelTokenSource
@@ -59,17 +59,17 @@ const PostList = () => {
 
   return (
     <>
-      <div className='App'>
+      <div className="App">
         {loading && <button onClick={handleCancelClick}>Cancel</button>}
-        <ul className='posts'>
-          {posts.map(post => (
+        <ul className="post">
+          {posts.map((post) => (
             <li key={post.id}>
               <h3>{post.title}</h3>
               <p>{post.body}</p>
             </li>
           ))}
         </ul>
-        {error && <p className='error'>{error}</p>}
+        {error && <p className="error">{error}</p>}
       </div>
     </>
   )

@@ -1,7 +1,7 @@
 import React from 'react'
 import UserInterface from './UserInterface'
 
-const UserComponent: React.FC<UserInterface> = props => {
+const UserComponent: React.FC<UserInterface> = (props) => {
   return (
     <div>
       <h1>User Component</h1>

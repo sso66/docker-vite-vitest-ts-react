@@ -9,10 +9,10 @@ const CustomerQuoteFetchData = () => {
 
   const fetchData = () => {
     fetch(baseUrl)
-      .then(response => {
+      .then((response) => {
         return response.json()
       })
-      .then(data => {
+      .then((data) => {
         setData(data)
         console.log(data)
         return data
@@ -29,11 +29,11 @@ const CustomerQuoteFetchData = () => {
   return (
     <>
       <header>
-        <div className='qmerit-logo'>
+        <div className="qmerit-logo">
           <h1>Qmerit</h1>
         </div>
-        <div className='quote-title'>
-          <div className='quote-date'>
+        <div className="quote-title">
+          <div className="quote-date">
             <div>
               <h2>{data?.description}</h2>
               <p>
@@ -42,9 +42,9 @@ const CustomerQuoteFetchData = () => {
             </div>
           </div>
 
-          <div className='service-provider'>
-            <div className='contractor'>
-              <div className='tablet'>
+          <div className="service-provider">
+            <div className="contractor">
+              <div className="tablet">
                 <div>{data?.serviceProvider.contactFirstName}</div>
                 <div>{data?.serviceProvider.constactLastName}</div>
                 <div>{data?.serviceProvider.dbaName}</div>
@@ -52,23 +52,23 @@ const CustomerQuoteFetchData = () => {
                 <div>{data?.serviceProvider.contactEmail}</div>
               </div>
 
-              <img src={serviceProvider} alt='Service Provder' />
+              <img src={serviceProvider} alt="Service Provder" />
             </div>
           </div>
         </div>
       </header>
-      <div className=' grid-container'>
-        <div className='grid-item'>
-          <div className='service-provider'>
+      <div className=" grid-container">
+        <div className="grid-item">
+          <div className="service-provider">
             <h3>Service Provider</h3>
-            <div className='contractor'>
+            <div className="contractor">
               <img
-                className='mobile'
+                className="mobile"
                 src={serviceProvider}
-                alt='Service Provider Mobile'
+                alt="Service Provider Mobile"
               />
 
-              <div className='mobile'>
+              <div className="mobile">
                 <div>{data?.serviceProvider.contactFirstName}</div>
                 <div>{data?.serviceProvider.constactLastName}</div>
                 <div>{data?.serviceProvider.dbaName}</div>
@@ -78,7 +78,7 @@ const CustomerQuoteFetchData = () => {
             </div>
 
             {/* <main className='main'> */}
-            <div className='project-information'>
+            <div className="project-information">
               <h3>Project Information</h3>
               <div>
                 {data?.customer.firstName} {data?.customer.lastName}
@@ -88,7 +88,7 @@ const CustomerQuoteFetchData = () => {
               <div>{data?.customer.email}</div>
             </div>
 
-            <div className='procedures'>
+            <div className="procedures">
               <ul>
                 {data?.catalogItems?.map((catalogItems, index) => {
                   return (
@@ -99,7 +99,7 @@ const CustomerQuoteFetchData = () => {
                       <ReactMarkdown>
                         {catalogItems.description?.['en-us']}
                       </ReactMarkdown>
-                      <form className='credits'>
+                      <form className="credits">
                         {catalogItems.quantity} x {catalogItems.retailPrice}
                         &nbsp;&nbsp;<b>${catalogItems.retailPrice}</b>
                       </form>
@@ -107,7 +107,7 @@ const CustomerQuoteFetchData = () => {
                   )
                 })}
                 <br />
-                <form className='credits'>
+                <form className="credits">
                   <label>Subtotal</label>
                   <label>
                     <b>${data?.totalRetailPrice}</b>
@@ -118,20 +118,20 @@ const CustomerQuoteFetchData = () => {
             {/* </main> */}
             {/* end-of-main */}
 
-            <aside className='interactions'>
+            <aside className="interactions">
               <h3>Quote Summary</h3>
-              <form className='quote-summary'>
-                <div className='credits'>
+              <form className="quote-summary">
+                <div className="credits">
                   <label>
                     <b>Subtotal</b>
                   </label>
                   <label>${data?.retailSubtotal}</label>
                 </div>
-                <div className='credits'>
+                <div className="credits">
                   <label>Deposit Received</label>
                   <label>-${data?.deposit}</label>
                 </div>
-                <div className='credits'>
+                <div className="credits">
                   <label>
                     <b>Total</b>
                   </label>
@@ -142,9 +142,9 @@ const CustomerQuoteFetchData = () => {
                   </label>
                 </div>
                 <hr />
-                <button className='btn-approve'>APPROVE</button>
+                <button className="btn-approve">APPROVE</button>
                 <hr />
-                <button className='btn-decline'>DECLINE</button>
+                <button className="btn-decline">DECLINE</button>
               </form>
             </aside>
           </div>
@@ -168,7 +168,7 @@ const CustomerQuoteFetchData = () => {
             is completed.
           </p>
 
-          <footer className='help'>
+          <footer className="help">
             {/* <h2>Footer</h2> */}
             <div>
               <b>Need assistance?</b>

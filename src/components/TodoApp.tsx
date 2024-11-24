@@ -32,12 +32,12 @@ const TodoApp = () => {
   }
 
   const removeTodo = (id: string) => {
-    const updatedTodos = todos.filter(todo => todo.id !== id)
+    const updatedTodos = todos.filter((todo) => todo.id !== id)
     setTodos(updatedTodos)
   }
 
   const toggleComplete = (id: string) => {
-    const updatedTodos = todos.map(todo => {
+    const updatedTodos = todos.map((todo) => {
       if (todo.id === id) {
         return { ...todo, completed: !todo.completed }
       }
@@ -50,16 +50,16 @@ const TodoApp = () => {
     <div>
       <h2>Todo App</h2>
       <input
-        type='text'
+        type="text"
         value={newTodo}
-        onChange={e => setNewTodo(e.target.value)}
+        onChange={(e) => setNewTodo(e.target.value)}
       />
       <button onClick={addTodo}>Add Todo</button>
       <ul>
-        {todos.map(todo => (
+        {todos.map((todo) => (
           <li key={todo.id}>
             <input
-              type='checkbox'
+              type="checkbox"
               checked={todo.completed}
               onChange={() => toggleComplete(todo.id)}
             />

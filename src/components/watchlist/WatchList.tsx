@@ -1,8 +1,8 @@
 // sample/List.tsx
-import { IAppState as IAppProps } from './WatchList'
+import { AppState as AppProps } from './WatchContainer'
 import './watchlist.css'
 
-const List = ({ form }: IAppProps) => {
+const WatchList = ({ form }: AppProps) => {
   const mapList = (): JSX.Element[] => {
     return form.map((i, j) => {
       return (
@@ -15,7 +15,7 @@ const List = ({ form }: IAppProps) => {
     })
   }
   return (
-    <div className="tableDiv">
+    <div className='tableDiv'>
       <table>
         <tr>
           <th>Movie</th>
@@ -28,4 +28,4 @@ const List = ({ form }: IAppProps) => {
   )
 }
 
-export default List
+export default WatchList

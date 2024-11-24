@@ -14,26 +14,26 @@ const MyList: React.FC = () => {
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
-      .then(response => response.json())
-      .then(data => setItems(data))
-      .catch(error => console.error('Error fetching data:', error))
+      .then((response) => response.json())
+      .then((data) => setItems(data))
+      .catch((error) => console.error('Error fetching data:', error))
   }, [])
 
   const handleInputChange = (id: number, name: string, value: string) => {
     setItems(
-      items.map(item => (item.id === id ? { ...item, [name]: value } : item))
+      items.map((item) => (item.id === id ? { ...item, [name]: value } : item))
     )
   }
 
   const handleSubmit = (id: number, e: React.FormEvent) => {
     e.preventDefault()
-    const item = items.find(item => item.id === id)
+    const item = items.find((item) => item.id === id)
     console.log('Form data submitted for item', id, ':', item)
   }
 
   return (
     <div>
-      {items.map(item => (
+      {items.map((item) => (
         <MyForm
           key={item.id}
           item={item}
