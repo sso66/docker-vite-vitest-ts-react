@@ -1,7 +1,7 @@
 // src/App.tsx
 
 import './App.css'
-import WatchList from './components/watchlist/WatchContainer.tsx'
+// import WatchList from './components/watchlist/WatchContainer.tsx'
 
 // import { UserPage } from './pages/UserPage'
 // import { PostPage } from './pages/PostPage'
@@ -15,6 +15,8 @@ import WatchList from './components/watchlist/WatchContainer.tsx'
 // import MyList from './copilot/MyList'
 // import TodoApp from './components/TodoApp'
 // import UserComponent from './components/example/UserComponent'
+import VanillaExtract from './components/examples/VanillaExtract'
+import { Decorator } from './designs/Decorator'
 
 function App () {
   return (
@@ -27,7 +29,9 @@ function App () {
         </h3>
       </header>
       <main>
-        <WatchList />
+        <Decorator />
+        <VanillaExtract />
+        {/* <WatchList /> */}
       </main>
       {/* <UserPage /> */}
       {/* <PostPage /> */}
