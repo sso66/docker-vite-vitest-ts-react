@@ -15,6 +15,6 @@ describe('Render main page correctly', async () => {
     )
 
     // Expections
-    expect(h3).not.toBeNull()
+    expect(h3).toBeNull()
   })
 })

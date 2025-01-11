@@ -1,6 +1,6 @@
 // src/App.tsx
 
-import './App.css'
+// import './App.css'
 // import WatchList from './components/watchlist/WatchContainer.tsx'
 
 // import { UserPage } from './pages/UserPage'
@@ -10,13 +10,13 @@ import './App.css'
 // import Home from "./components/bank/Home";
 
 // import VanillaExtract from './components/examples/VanillaExtract'
-// import TailwindCSSBorderBox from './components/examples/TailwindCSSBorderBox'
+import TailwindCSSBorderBox from './components/examples/TailwindCSSBorderBox'
 // import { Menu } from './components/examples/Menu'
 // import MyList from './copilot/MyList'
 // import TodoApp from './components/TodoApp'
 // import UserComponent from './components/example/UserComponent'
-import VanillaExtract from './components/examples/VanillaExtract'
-import { Decorator } from './designs/Decorator'
+// import VanillaExtract from './components/examples/VanillaExtract'
+// import { Decorator } from './designs/Decorator'
 
 function App () {
   return (
@@ -29,8 +29,8 @@ function App () {
         </h3>
       </header>
       <main>
-        <Decorator />
-        <VanillaExtract />
+        {/* <Decorator /> */}
+        {/* <VanillaExtract /> */}
         {/* <WatchList /> */}
       </main>
       {/* <UserPage /> */}
@@ -53,7 +53,7 @@ function App () {
       {/* <Menu /> */}
 
       {/* <AxiosApi /> */}
-      {/* <TailwindCSSBorderBox /> */}
+      <TailwindCSSBorderBox />
 
       {/* <MyList /> */}
 
@@ -62,7 +62,7 @@ function App () {
           address='152 Eagleton Ct, Palm Beach Gardens, FL 33418'
           age={73}
         /> */}
-      {/* <h4>+ Vanilla Extract CSS-in-JS + Tailwind CSS Framework</h4> */}
+      <h4>+ Vanilla Extract CSS-in-JS + Tailwind CSS Framework</h4>
     </div>
   )
 }
